@@ -1,5 +1,15 @@
 # counternozzle
 
+//create a uaa user for this nozzle
+```java
+uaac target --skip-ssl-validation uaa.<systemFQDN>
+uaac token client get admin -s <admin-client-secret>
+uaac user add CounterNozzle \
+    --password CounterNozzle \
+    --emails CounterNozzle@nozzle.com \
+    && uaac member add doppler.firehose CounterNozzle
+```
+
 // to reset all counters in the nozzles.
 ```java
 for i in {0..<NUMBER INSTANCES OF COUNTERNOZZLE - 1>}
