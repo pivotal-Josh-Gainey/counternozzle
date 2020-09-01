@@ -5,7 +5,7 @@ applications:
   random-route: true
   path: target/counternozzle-0.0.1-SNAPSHOT.jar
   env:
-    CFUSER: USER_HERE
-    CFPASSWORD: PASSWORD_HERE
+    CFUSER: CounterNozzle
+    CFPASSWORD: CounterNozzle
     CFAPI: API_HERE
     SUBCRIPTIONID: CounterNozzle
