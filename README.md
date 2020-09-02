@@ -5,7 +5,7 @@
 uaac target --skip-ssl-validation uaa.<systemFQDN>
 uaac token client get admin -s <admin-client-secret>
 uaac user add CounterNozzle \
-    --password password \
+    --password ,<password> \
     --emails CounterNozzle@nozzle.com \
     && uaac member add doppler.firehose CounterNozzle
 ```
