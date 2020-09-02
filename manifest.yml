@@ -6,6 +6,6 @@ applications:
   path: target/counternozzle-0.0.1-SNAPSHOT.jar
   env:
     CFUSER: CounterNozzle
-    CFPASSWORD: CounterNozzle
+    CFPASSWORD: <password from when created uaa user>
     CFAPI: API_HERE
     SUBCRIPTIONID: CounterNozzle
